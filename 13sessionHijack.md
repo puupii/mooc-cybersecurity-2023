@@ -1,3 +1,6 @@
+
+# 13 Session Hijack
+
 <p>The assignment contains a very simple bank application with 3 normal users</p><ul>
 <li>bob:squarepants</li>
 <li>alice:redqueen</li>
@@ -13,4 +16,7 @@ Figure out the formula and obtain Alice's balance by guessing Alice's session id
 <li>Use Python library <a href="https://www.w3schools.com/python/ref_requests_get.asp" target="_blank" rel="noopener noreferrer">requests</a>.</li>
 <li>Note that <code class="language-text">json.loads</code> does not work with byte streams when using Python 3.5. </li>
 <li>The session id for Django web servers is stored in a cookie named <code class="language-text">sessionid</code>.</li>
-</ul></div></div></div></div></div></div>
+</ul>
+
+---
+

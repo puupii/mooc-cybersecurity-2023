@@ -1,3 +1,6 @@
+
+# 16 Cross Site Scripting
+
 <p>The exercise contains a simple direct message application, where messages are
 not properly sanitized. This allows to send messages containing HTML code, and Javascript code.
 Write a message that–when viewed by the victim in the application–will steal the victim cookie.
@@ -17,4 +20,7 @@ The request body to <code class="language-text">mail/</code> should be a JSON ob
 This means that your chrome installation is a bit wonky, what often helps is commenting out
 the line <code class="language-text">options.add_argument('--user-data-dir=test/chrome_user_data')</code>
 in <code class="language-text">test/test_xss.py</code>.</li>
-</ul></div></div></div></div></div></div>
+</ul>
+
+---
+

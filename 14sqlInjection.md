@@ -1,3 +1,6 @@
+
+# 14 SQL Injection
+
 <p>Python SQLite API provides two main methods for executing commands, <code class="language-text">execute</code> and <code class="language-text">executescript</code>.
 The latter along with the unsanitized data allows you to escape the current command, and tricks like
 <code class="language-text">DROP TABLES</code> become possible. However, with <code class="language-text">execute</code> you can execute only <em>one</em> command. That is, you cannot escape the current command but you can still do
@@ -8,4 +11,7 @@ from the TMC server with a browser.</li>
 <li>You can assume that there is only one admin, marked with <code class="language-text">admin = 1</code></li>
 <li>See <a href="https://www.w3schools.com/sql/sql_injection.asp" target="_blank" rel="noopener noreferrer">here</a> for various examples of SQL injections</li>
 <li>See UNIONs</li>
-</ul></div></div></div></div></div></div>
+</ul>
+
+---
+
