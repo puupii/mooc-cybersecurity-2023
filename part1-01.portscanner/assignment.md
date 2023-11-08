@@ -1,4 +1,4 @@
-<hr class="MuiDivider-root StyledDivider-sc-1n2xct7-0 dtoEBC"></div><div class="ExerciseDescription__ExerciseDescriptionWrapper-yvyieb-0 oYyNT"><div></div><p>In this assignment, you will gain some hands-on experience on working with
+<p>In this assignment, you will gain some hands-on experience on working with
 ports in Python and familiarize yourself with the tools used for some of the
 programming tasks in this course.</p><p>The assignment template that you can retrieve either using Test My Code, or the
 Test My Code web site contains the following code in portscanner.py.</p><div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment">#!/usr/bin/env python3</span>
