@@ -1,4 +1,4 @@
-<div class="MuiCardContent-root"><div class="ProgrammingExercise__Body-sc-1aoo3kr-8 gESXXa"><div><div><div class="ProgrammingExercise__Small-sc-1aoo3kr-12 fcqiUc"><p>Programming exercise submission instructions can be found here:  <a href="/installation-guide" rel="noopener noreferrer" target="_blank">Exercise submission instructions</a>.</p><p>You can see your submissions in the Test My Code exercise submission environment  <a href="https://tmc.mooc.fi/exercises/197233?use_clients=1" rel="noopener noreferrer" target="_blank">here.</a></p><hr class="MuiDivider-root StyledDivider-sc-1n2xct7-0 dtoEBC"></div><div class="ExerciseDescription__ExerciseDescriptionWrapper-yvyieb-0 oYyNT"><div></div><p>In this assignment, you will gain some hands-on experience on working with
+<hr class="MuiDivider-root StyledDivider-sc-1n2xct7-0 dtoEBC"></div><div class="ExerciseDescription__ExerciseDescriptionWrapper-yvyieb-0 oYyNT"><div></div><p>In this assignment, you will gain some hands-on experience on working with
 ports in Python and familiarize yourself with the tools used for some of the
 programming tasks in this course.</p><p>The assignment template that you can retrieve either using Test My Code, or the
 Test My Code web site contains the following code in portscanner.py.</p><div class="gatsby-highlight" data-language="python"><pre class="language-python"><code class="language-python"><span class="token comment">#!/usr/bin/env python3</span>
@@ -9,9 +9,9 @@ Test My Code web site contains the following code in portscanner.py.</p><div cla
 <span class="token keyword">def</span> <span class="token function">get_accessible_ports</span><span class="token punctuation">(</span>address<span class="token punctuation">,</span> min_port<span class="token punctuation">,</span> max_port<span class="token punctuation">)</span><span class="token punctuation">:</span>
     found_ports <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
 
-    <span class="token comment"># write code here</span>
+    # write code here
 
-    <span class="token keyword">return</span> found_ports
+    return found_ports
 
 
 <span class="token keyword">def</span> <span class="token function">main</span><span class="token punctuation">(</span>argv<span class="token punctuation">)</span><span class="token punctuation">:</span>
