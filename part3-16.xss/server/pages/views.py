@@ -9,22 +9,22 @@ import json
 
 
 # This view simulates an external mail server receiving a stolen cookie
-@csrf_exempt 
+@csrf_exempt
 def mailView(request):
-	Mail.objects.create(content=request.body.decode('utf-8'))
-	print(request.body.decode('utf-8'))
-	return HttpResponse('')
-	
+    Mail.objects.create(content=request.body.decode('utf-8'))
+    print(request.body.decode('utf-8'))
+    return HttpResponse('')
+
 
 @login_required
 def addView(request):
-	target = User.objects.get(username=request.POST.get('to'))
-	Message.objects.create(source=request.user, target=target, content=request.POST.get('content'))
-	return redirect('/')
+    target = User.objects.get(username=request.POST.get('to'))
+    Message.objects.create(source=request.user, target=target, content=request.POST.get('content'))
+    return redirect('/')
 
 
 @login_required
 def homePageView(request):
-	messages = Message.objects.filter(Q(source=request.user) | Q(target=request.user))
-	users = User.objects.exclude(pk=request.user.id)
-	return render(request, 'pages/index.html', {'msgs': messages, 'users': users})
+    messages = Message.objects.filter(Q(source=request.user) | Q(target=request.user))
+    users = User.objects.exclude(pk=request.user.id)
+    return render(request, 'pages/index.html', {'msgs': messages, 'users': users})

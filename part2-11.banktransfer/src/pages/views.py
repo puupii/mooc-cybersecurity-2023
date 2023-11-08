@@ -9,10 +9,10 @@ from .models import Account
 @transaction.atomic
 def transfer(sender, receiver, amount):
     if amount < 0:
-        return 
+        return
     acc1 = Account.objects.get(iban=sender)
     acc2 = Account.objects.get(iban=receiver)
-    
+
     if amount > acc1.balance:
         return
 
@@ -27,12 +27,12 @@ def transfer(sender, receiver, amount):
 
 
 def homePageView(request):
-	if request.method == 'POST':
-		sender = request.POST.get('from')
-		receiver = request.POST.get('to')
-		amount = int(request.POST.get('amount'))
-		transfer(sender, receiver, amount)
+    if request.method == 'POST':
+        sender = request.POST.get('from')
+        receiver = request.POST.get('to')
+        amount = int(request.POST.get('amount'))
+        transfer(sender, receiver, amount)
 
-	accounts = Account.objects.all()
-	context = {'accounts': accounts}
-	return render(request, 'pages/index.html', context)
+    accounts = Account.objects.all()
+    context = {'accounts': accounts}
+    return render(request, 'pages/index.html', context)
